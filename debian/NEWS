@@ -1,0 +1,25 @@
+python-ucam-webauth-raven-compat (1:0.9.0) bionic; urgency=medium
+
+  Our raven Python package is now named ucam_webauth.raven; the corresponding
+  Debian/Ubuntu package has also been renamed to python3-ucam-webauth /
+  python-ucam-webauth.  Code will need updating to use the new Python package.
+
+  This package exists to aid upgrades from python-raven to python-ucam-webauth
+  by providing an alias for the package with its old name.
+
+  However, another -- completely unrelated -- package called python-raven /
+  python3-raven is now present in the Debian and Ubuntu archives.  The two
+  different python-raven packages cannot coexist.  This package deliberately
+  takes precedence over the official one in order to avoid breaking code
+  during upgrades.
+
+  Having the python-raven Apt repository in your /etc/apt/sources.list*
+  WILL BREAK any other package that depends on the other python-raven package!
+
+  You should migrate your code to python-ucam-webauth as soon as possible,
+  and remove python*-raven AND DECONFIGURE the python-raven Apt repository.
+
+  A new Apt repository is available which just contains python*-ucam-webauth
+  without this dangerous compatibility wrapper.
+
+ -- Malcolm Scott <debianpkg@malc.org.uk>  Tue, 08 May 2018 17:04:05 +0100

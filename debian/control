@@ -1,0 +1,40 @@
+Source: python-ucam-webauth-raven-compat
+Priority: optional
+Maintainer: Malcolm Scott <debianpkg@malc.org.uk>
+Build-Depends: debhelper (>= 9.0.0), dh-python, python3-all-dev, python-all-dev (>= 2.7), python3-setuptools, python-setuptools
+Standards-Version: 3.9.5
+Section: python
+Vcs-Git: https://github.com/mas90/python-raven
+Vcs-Browser: https://github.com/mas90/python-raven
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.1
+
+Package: python-raven
+Architecture: any
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, python-ucam-webauth (>= 0.9)
+Provides: ${python:Provides}
+Description: Ucam-webauth and Raven application agent in Python 2 -- compatibility wrapper
+ The Python module for integration with the University of Cambridge's web-based
+ single sign-on system, Raven, was renamed from python-raven to python-ucam-webauth.
+ .
+ This package provides a compatibility wrapper with the old package name to aid upgrades.
+ .
+ Note that there is another unrelated python-raven in the Ubuntu and Debian archives;
+ this package's existence will break anything depending on the other python-raven!
+ .
+ This version is for use in Python 2.
+
+Package: python3-raven
+Architecture: any
+Depends: ${python3:Depends}, ${shlibs:Depends}, ${misc:Depends}, python3-ucam-webauth (>= 0.9)
+Provides: ${python3:Provides}
+Description: Ucam-webauth and Raven application agent in Python 3
+ The Python module for integration with the University of Cambridge's web-based
+ single sign-on system, Raven, was renamed from python-raven to python-ucam-webauth.
+ .
+ This package provides a compatibility wrapper with the old package name to aid upgrades.
+ .
+ Note that there is another unrelated python-raven in the Ubuntu and Debian archives;
+ this package's existence will break anything depending on the other python-raven!
+ .
+ This version is for use in Python 3.
