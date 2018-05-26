@@ -1,6 +1,7 @@
 python-ucam-webauth-raven-compat (1:0.9.2.1-1) bionic; urgency=medium
 
   * Move to official wrapper module (basically identical)
+  * Licence changed to BSD-2-clause to match python-ucam-webauth
 
  -- Malcolm Scott <debianpkg@malc.org.uk>  Sat, 26 May 2018 20:44:32 +0100
 
