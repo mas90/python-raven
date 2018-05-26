@@ -1,7 +1,7 @@
 Source: python-ucam-webauth-raven-compat
 Priority: optional
 Maintainer: Malcolm Scott <debianpkg@malc.org.uk>
-Build-Depends: debhelper (>= 9.0.0), dh-python, python3-all-dev, python-all-dev (>= 2.7), python3-setuptools, python-setuptools
+Build-Depends: debhelper (>= 9.0.0), dh-python, python3-all-dev, python-all-dev (>= 2.7), python3-setuptools, python-setuptools, python-ucam-webauth (>= 0.9), python3-ucam-webauth (>= 0.9)
 Standards-Version: 3.9.5
 Section: python
 Vcs-Git: https://github.com/mas90/python-raven

@@ -1,3 +1,9 @@
+python-ucam-webauth-raven-compat (1:0.9.2.1-2) bionic; urgency=medium
+
+  * Fix test dependencies
+
+ -- Malcolm Scott <debianpkg@malc.org.uk>  Sat, 26 May 2018 21:31:42 +0100
+
 python-ucam-webauth-raven-compat (1:0.9.2.1-1) bionic; urgency=medium
 
   * Move to official wrapper module (basically identical)
