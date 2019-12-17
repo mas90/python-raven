@@ -1,1 +1,1 @@
-from ucam_webauth.raven.flask_glue import *
+from ucam_webauth.raven.flask_glue import AuthDecorator
