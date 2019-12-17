@@ -1,3 +1,10 @@
+python-ucam-webauth-raven-compat (1:0.9.2.2-1) bionic; urgency=medium
+
+  * Don't import *, as that doesn't work under Python 2 due to
+    unicode_literals
+
+ -- Malcolm Scott <debianpkg@malc.org.uk>  Tue, 17 Dec 2019 14:54:57 +0000
+
 python-ucam-webauth-raven-compat (1:0.9.2.1-2) bionic; urgency=medium
 
   * Fix test dependencies
